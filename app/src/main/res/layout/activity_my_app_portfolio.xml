@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MyAppPortfolio">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popular Movies"
+        android:id="@+id/btnMovies"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentStart="true"
+        android:background="#ffca43"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:enabled="true"
+        android:maxHeight="@android:dimen/app_icon_size"
+        android:nestedScrollingEnabled="false"
+        android:onClick="movies_Click" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/btnScores"
+        android:background="#ffca43"
+        android:onClick="scores_Click"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnMovies" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/btnLibrary"
+        android:background="#ffca43"
+        android:onClick="library_Click"
+        android:layout_below="@+id/btnMovies"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build It Bigger"
+        android:id="@+id/btnBuild"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/btnLibrary"
+        android:layout_alignStart="@+id/btnLibrary"
+        android:layout_alignParentEnd="true"
+        android:background="#ffca43"
+        android:onClick="build_Click" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/btnXyz"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/btnBuild"
+        android:layout_alignStart="@+id/btnBuild"
+        android:layout_alignEnd="@+id/btnBuild"
+        android:background="#ffca43"
+        android:onClick="xyz_Click" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capstone: My App"
+        android:id="@+id/btnCapstone"
+        android:layout_below="@+id/btnXyz"
+        android:layout_alignStart="@+id/btnXyz"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:background="#ff3439"
+        android:onClick="capstone_Click" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Nanodegree Apps!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnSpotify"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textSize="24dip"
+        android:width="400dip" />
+</RelativeLayout>
